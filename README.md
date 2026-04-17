@@ -107,6 +107,7 @@ Right now the priority is:
 ---
 
 ## Project Structure (⚠️)
+```
 src/
 ├── components/
 │ ├── Navbar.jsx
@@ -125,7 +126,7 @@ src/
 │ └── AppContext.jsx
 │
 └── App.jsx
-
+```
 
 ---
 
