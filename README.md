@@ -1,106 +1,108 @@
-# ReflectQuran - A Minimal Quran Reflection Web App
+# ReflectQuran — Minimal Quran Reflection App
 
-ReflectQuran is a modern, minimal web application inspired by apps like ThinkQuran. The goal is to create a clean and distraction-free platform for reading the Quran, exploring translations, listening to recitations, and writing personal reflections.
+ReflectQuran is a clean, distraction-free Quran reading and reflection web app.
+The goal is to build a **solid, usable foundation first**, then evolve it into a more intelligent, feature-rich experience over time.
 
-The focus is on simplicity, performance, and a thoughtful user experience rather than feature overload.
+This project is being developed **alongside learning React**, with a focus on real-world implementation rather than just theory.
 
-## Teck Stack
+---
 
-- **Frontend:** React (with vite)
-- **Styling:** TailwindCSS
-- **State Management:** React ContextAPI (Zustand Later)
-- **Backend (Phase 2):** Firebase or Supabase
+## Current Focus
+
+Right now the priority is:
+
+- Build a **working MVP**
+- Keep things **simple and functional**
+- Avoid over-engineering
+- Ship features **incrementally**
+
+---
+
+## Tech Stack
+
+- **Frontend:** React (Vite)
+- **Styling:** Tailwind CSS
+- **State Management:** React (useState, useEffect → Context later)
+- **Backend (later):** Firebase or Supabase
+
+---
 
 ## Data Sources
 
-- [Quran.com API](https://api-docs.quran.foundation/docs/quickstart/)
-- [AlQuran Cloud API](https://alquran.cloud/api)
+- Quran.com API
+- AlQuran Cloud API
 
-**Focus:**
+**Used for:**
 
-- Surah and Ayah data
-- Multiple Translations
-- Audio Recitations
+- Surah & Ayah data
+- Translations
+- Audio
 
-## Core Features (MVP)
+---
 
-###### Surah Listing
+## Development Phases
 
-- [ ] Display all 114 Surah
-- [ ] Basic metadata (name, number, type)
+---
 
-###### Ayah View
+### 🧱 Phase 1 — Core MVP (Current)
 
-- [ ] Arabic text
-- [ ] Translation
-- [ ] Clean reading layout
+**Goal:** Build a usable Quran reader
 
-###### Navigation
+#### Surah List
 
-- [ ] Simple routing between surah list and detail pages
+- [x] Fetch and display all Surahs
+- [x] Show basic info (name, translation, ayah count)
 
-## Advanced Features (Phase 2)
+#### Surah Detail
 
-- [ ] Audio playback for each Ayah
-- [ ] Bookmarking system
-- [ ] Dark/light mode toggle
-- [ ] Smooth scrolling + reading progress
+- [ ] Display Ayahs
+- [ ] Show Arabic text
+- [ ] Show translation
 
-## Reflection System (Phase 3)
+#### Navigation
 
-- [ ] Add personal notes per Ayah
-- [ ] Save reflections (requires backend)
-- [ ] Highlight or tag Ayahs
+- [ ] Routing (Surah → Detail page)
+
+---
+
+### ⚙️ Phase 2 — Make it a Real App
+
+**Goal:** Add usability features
+
+- [ ] Audio playback (per Ayah)
+- [ ] Dark mode
+- [ ] Bookmarks (localStorage first)
+- [ ] Basic UI polish
+
+---
+
+### 🧠 Phase 3 — Personal Layer
+
+**Goal:** Add user interaction
+
+- [ ] Notes per Ayah
+- [ ] Save reflections (backend)
+- [ ] Highlight Ayahs
+
+---
+
+### 🎧 Phase 4 — Audio + Voice (Future)
+
+**Goal:** Enable recitation interaction
+
+- [ ] Record user voice (Web Audio API)
+- [ ] Playback + control system
+
+---
+
+### 🤖 Phase 5 — AI Features (Long-term)
+
+**Goal:** Move toward Tarteel-like experience
+
+- [ ] Speech-to-text (Whisper / similar)
+- [ ] Compare recitation with actual Ayah
+- [ ] Detect mistakes (basic matching)
+
+---
 
 ## Project Structure
-
-```
-src/
-├── components/
-│ ├── Ayah.jsx
-│ ├── SurahCard.jsx
-│ └── AudioPlayer.jsx
-│
-├── pages/
-│ ├── SurahList.jsx
-│ └── SurahDetail.jsx
-│
-├── services/
-│ └── api.js
-│
-├── context/
-│ └── AppContext.jsx
-│
-└── App.jsx
-```
-
-## Development Approach
-
-- [ ] Build incrementally (feature by feature)
-- [ ] Focus on working UI before optimization
-- [ ] Keep components reusable and clean
-- [ ] Avoid over-engineering early
-
-## Development Approach
-
-- [ ] Build incrementally (feature by feature)
-- [ ] Focus on working UI before optimization
-- [ ] Keep components reusable and clean
-- [ ] Avoid over-engineering early
-
-## Expected Outcome
-
-A fully functional MVP that allows users to:
-
-- [ ] Browse Surahs
-- [ ] Read Quran text with translations
-- [ ] Experience a clean, modern UI
-
-Future iterations will expand into personalization and reflection features.
-
-## Notes
-
-This project is intended as both:
-
-- A learning exercise for modern frontend development
-- A foundation for a production-level spiritual app
