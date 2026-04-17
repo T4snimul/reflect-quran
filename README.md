@@ -4,6 +4,7 @@ ReflectQuran is a clean, distraction-free Quran reading and reflection web app.
 The goal is to build a **solid, usable foundation first**, then evolve it into a more intelligent, feature-rich experience over time.
 
 This project is being developed **alongside learning React**, with a focus on real-world implementation rather than just theory.
+![design](./src/assets/design.png)
 
 ---
 
