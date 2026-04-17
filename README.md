@@ -106,4 +106,61 @@ Right now the priority is:
 
 ---
 
-## Project Structure
+## Project Structure (⚠️)
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── SurahCard.jsx
+│ ├── Ayah.jsx
+│ └── AudioPlayer.jsx
+│
+├── pages/
+│ ├── SurahList.jsx
+│ └── SurahDetail.jsx
+│
+├── services/
+│ └── api.js
+│
+├── context/
+│ └── AppContext.jsx
+│
+└── App.jsx
+
+
+---
+
+## Development Approach
+
+- [ ] Build while learning (not after learning)
+- [ ] Ship small features fast
+- [ ] Keep logic simple and readable
+- [ ] Improve UI after functionality works
+- [ ] Avoid unnecessary libraries early
+
+---
+
+## Expected Outcome (Short-Term)
+
+A working app where users can:
+
+- [ ] Browse Surahs
+- [ ] Read Quran with translation
+- [ ] Navigate smoothly between pages
+
+---
+
+## Long-Term Vision
+
+This project may evolve into:
+
+- A reflection-focused Quran app
+- A personalized study tool
+- Eventually, a recitation-aware system
+
+---
+
+## Notes
+
+- This is a **learning-driven project**, not a polished product (yet)
+- Focus is on **progress over perfection**
+- Features will be added step-by-step based on need
